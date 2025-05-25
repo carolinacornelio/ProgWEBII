@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERTON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .icon_action {
+            width: 24px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            width: 1224px;
+            margin: 0 auto;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .active {
+            color: #FF7120;
+        }
+
+        .active::before {
+            content: "•";
+            color: #FF7120;
+            font-size: 24px;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 37px;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .number {
+            background-color: red;
+            color: white;
+            position: absolute;
+            font-size: 10px;
+            padding: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 50%;
+            margin-left: -11px;
+            margin-top: -4px;
+        }
+
+        .btn-login {
+            background-color: #023047;
+            color: #CCC;
+            border: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-radius: 20px;
+        }
+
+        content {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+
+        .cont-left {
+            flex: 1;
+        }
+
+        .cont-left h1 {
+            font-family: serif;
+            font-weight: bold;
+            font-size: 65px;
+            color: #023047;
+        }
+
+        .cont-left h3 {
+            font-weight: 500;
+            color: #333333;
+            margin-top: 20px;
+        }
+
+        .cont-right {
+            flex: 1;
+        }
+
+        .orange {
+            color: #FF7120;
+        }
+
+        .cacto {
+            position: absolute;
+            margin-left: 320px;
+            margin-top: 70px;
+        }
+
+        .form {
+            border-radius: 10px;
+            padding: 25px;
+            font-size: 18px;
+            border: 1px solid #CCC;
+            box-shadow: 1px 1px 10px #CCCC;
+            flex: 2;
+        }
+
+        .btn {
+            border-radius: 10px;
+            padding: 25px;
+            padding-left: 35px;
+            padding-right: 35px;
+            font-size: 18px;
+            flex: 1;
+            border: 1px solid #CCC;
+            box-shadow: 1px 1px 10px #CCCC;
+            background-color: #023047;
+            color: white;
+            flex: 1;
+        }
+
+        .container-form {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 60px;
+        }
+
+        .pizza {
+            position: absolute;
+            z-index: 2;
+            margin-top: -120px;
+            margin-left: 230px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <img src="img/logoserton.png" alt="Logo Serton" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Página Inicial</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon_action">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon_action">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                    <span class="number">4</span>
+                </div>
+                <div>
+                    <button class="btn-login">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon_action">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
+                        </svg>
+                        <span>Login</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <content>
+            <div class="cont-left">
+                <div class="cacto">
+                    <img src="img/cacto.png" alt="Cacto" />
+                </div>
+                <h1>Bem vindo<br />O <span class="orange">sertão</span><br />agora esta <span
+                        class="orange">online</span></h1>
+                <div>
+                    <h3>Fique por dentro das novidades dos estabelecimentos da sua cidade.</h3>
+                    <form class="container-form">
+                        <input type="text" class="form" placeholder="Digite o nome da sua cidade">
+                        <button class="btn">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="cont-right">
+                <img src="img/banner.png" alt="Banner" />
+                <div class="pizza">
+                    <img src="img/pizza1.png" alt="Pizza" />
+                </div>
+            </div>
+        </content>
+    </div>
+</body>
+
+</html>
