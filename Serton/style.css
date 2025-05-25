@@ -1,6 +1,7 @@
 body {
   font-family: poppins, sans-serif;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 #fundo {
@@ -195,8 +196,9 @@ content {
   margin-top: 10px;
 }
 
-.cards-header h1, #categorias h1 {
-    font-size: 36px;
+.cards-header h1,
+#categorias h1 {
+  font-size: 36px;
 }
 
 .cards-link {
@@ -298,23 +300,204 @@ footer ul li {
 }
 
 .content-about {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 150px;
 }
 .content-about img {
-    width: 393;
-    height: 295px;
+  width: 393;
+  height: 295px;
 }
 .content-about h1 {
-    font-size: 45px;
-    color: #252525;
-    font-family: Rubik, sans-serif;
+  font-size: 45px;
+  color: #252525;
+  font-family: Rubik, sans-serif;
 }
 .content-about p {
-    font-size: 24px;
-    color: #333333;
+  font-size: 24px;
+  color: #333333;
+}
+
+.categorias-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 50px;
+  margin-top: 60px;
+}
+
+.categorias-form input {
+  flex: none;
+  width: 1050px !important;
+}
+
+.categorias-form button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorias-form div {
+  width: 30px;
+}
+
+.detalhes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.detalhes-header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.detalhes-header h1 {
+  color: #252525;
+  font-size: 45px;
+}
+.detalhes-link {
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#horarios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+#horarios p {
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 3px;
+  margin-top: -5px;
+}
+#horarios #hora1 {
+  background-color: #1cc34b;
+  color: white;
+}
+#horarios #hora2 {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+.item-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-radius: 30px;
+  width: 150px;
+}
+.item-menu img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  margin-left: none;
+}
+#menu-active {
+  background-color: #023047;
+  color: white;
+}
+
+#combos {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.combo img {
+  width: 245px;
+  height: 285px;
+  border-radius: 17px;
+  object-fit: cover;
+}
+
+.peca-agora {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: -30px;
+}
+.peca-agora img {
+  width: 10px;
+  height: 10px;
+}
+
+.combo-cor {
+  width: 245px;
+  height: 285px;
+  border-radius: 17px;
+  position: absolute;
+  margin-top: -290px;
+  background-color: rgba(0, 0, 0, 0.418);
+  color: white;
+}
+.combo-cor span {
+  color: #f2c94c;
+  font-weight: bold;
+  font-size: 13px;
+}
+.combo-info {
+  margin-top: 180px;
+  margin-left: 15px;
+}
+
+.combo-info .combo-nome {
+  font-size: 20px;
+}
+
+.combo-info h4 {
+  font-size: 18px;
+  margin-top: -10px;
+}
+
+#navegacao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+#navegacao p {
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navegacao #nav1 {
+  background-color: #E0E0E0;
+  color: black;
+}
+#navegacao #nav2 {
+  background-color: #023047;
+  color: white;
 }
