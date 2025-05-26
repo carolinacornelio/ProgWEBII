@@ -21,7 +21,7 @@ header {
 }
 
 .container {
-  width: 1224px;
+  max-width: 1224px;
   margin: 0 auto;
 }
 
@@ -393,10 +393,15 @@ footer ul li {
   color: black;
 }
 
-#menu {
+#menuh {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 80px;
+}
+#menuv {
+  display: flex;
+  flex-direction: column;
   gap: 80px;
 }
 .item-menu {
@@ -407,7 +412,8 @@ footer ul li {
   padding-left: 10px;
   padding-right: 20px;
   border-radius: 30px;
-  width: 150px;
+  width: 175px;
+  height: 65px;
 }
 .item-menu img {
   background-color: white;
@@ -422,11 +428,21 @@ footer ul li {
   color: white;
 }
 
-#combos {
+#combosh {
   margin-top: 25px;
   display: flex;
   flex-direction: row;
   gap: 40px;
+  overflow: hidden;
+}
+
+#combosv {
+  margin-top: 25px;
+  margin-left: 10px;
+  padding: 0 20px;  
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
   overflow: hidden;
 }
 
@@ -477,6 +493,10 @@ footer ul li {
   margin-top: -10px;
 }
 
+.combo {
+  position: relative;
+}
+
 #navegacao {
   display: flex;
   flex-direction: row;
@@ -500,4 +520,26 @@ footer ul li {
 #navegacao #nav2 {
   background-color: #023047;
   color: white;
+}
+
+#menuv-completo {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.barra-nav {
+  background-color: #F2F2F2;
+  width: 15px;
+  height: 550px;
+  border-radius: 100px;
+  margin-top: -50px;
+
+}
+.barra-nav #barra {
+  background-color: #023047;
+  border-radius: 100px;
+  width: 15px;
+  height: 80px;
+  margin-top: -15px;
 }
