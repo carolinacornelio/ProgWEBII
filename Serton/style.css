@@ -436,6 +436,9 @@ footer ul li {
   overflow: hidden;
 }
 
+#combosv-pai{
+  overflow: hidden;
+}
 #combosv {
   margin-top: 25px;
   margin-left: 10px;
